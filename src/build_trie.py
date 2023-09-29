@@ -23,5 +23,5 @@ print(titles[-1])
 print(len(titles))
 new_trie = MarisaTrie(titles)
 
-with open("cache/llama_kilt_full_titles_trie.pkl", "wb") as f:
+with open("cache/llama_kilt_w1002full_titles_trie.pkl", "wb") as f:
     pickle.dump(new_trie, f)

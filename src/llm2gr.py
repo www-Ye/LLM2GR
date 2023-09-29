@@ -7,10 +7,9 @@ from transformers import (
     GenerationConfig
 )
 import torch
-from trie import MarisaTrie
 import numpy as np
 from typing import Dict, List
-from seal import fm_index_generate, FMIndex
+from seal import FMIndex
 from prompt_llama_0_shot import prompt_dict as prompt_dict_0
 import re
 from kilt.eval_downstream import evaluate
@@ -167,7 +166,7 @@ preds = []
 cnt = 0
 all_time = 0.
 tst_nums = 0
-for row in tqdm(data):
+for row in tqdm(data[:10]):
     _id = row['id']
     _input = row['input']
     
@@ -175,7 +174,7 @@ for row in tqdm(data):
     
     start_time = time.time()
     if args.isretrieval == 1:
-        # 1 step
+        # first stage
         input_prompt = title_recite_prompt.format(_input)
         print(input_prompt)
         inputs = tokenizer(input_prompt, return_tensors="pt", add_special_tokens=True)
@@ -230,6 +229,7 @@ for row in tqdm(data):
             generation_config=generation_recite_config,
         )
     else:
+        # second stage
         
         allowed_tokens_func.init_para(tmp_index, input_ids.shape[1])
         

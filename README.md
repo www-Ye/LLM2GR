@@ -1,6 +1,6 @@
 # Generative Retrieval with Large Language Models
 
-This guide will help you implement the paper [Generative Retrieval with Large Language Models].
+Code implementation of the paper [Generative Retrieval with Large Language Models].
 
 ## Prerequisites
 

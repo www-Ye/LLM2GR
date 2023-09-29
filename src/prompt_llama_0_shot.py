@@ -75,3 +75,6 @@ recite_prompt = {'triviaqa': [triviaqa_recite_prompt1, triviaqa_recite_prompt2],
 	'fever': [fever_recite_prompt1, fever_recite_prompt2], \
 	'eli5': [eli5_recite_prompt1, eli5_recite_prompt2], \
 	'wow': [wow_recite_prompt1, wow_recite_prompt2]}
+
+
+prompt_dict = {'recite': recite_prompt}
