@@ -166,7 +166,7 @@ preds = []
 cnt = 0
 all_time = 0.
 tst_nums = 0
-for row in tqdm(data[:10]):
+for row in tqdm(data):
     _id = row['id']
     _input = row['input']
     
