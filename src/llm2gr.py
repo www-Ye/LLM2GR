@@ -147,7 +147,7 @@ with open("cache/llama_kilt_w1002full_titles_trie.pkl", "rb") as f:
 allowed_tokens_func_1step = get_allowed_tokens_func_1step(tokenizer, trie)
 
 index = FMIndex.load(f'cache/kilt_w1002full_corpus.fm_index')
-allowed_tokens_func = get_allowed_tokens_fn(tokenizer, index)
+allowed_tokens_func = get_allowed_tokens_fn()
 
 with open('cache/w1002full_wikititle2id.json', 'r', encoding='utf-8') as f:
     wikititle2id = json.load(f)
