@@ -1,6 +1,6 @@
 # Generative Retrieval with Large Language Models
 
-Code implementation of the paper [Generative Retrieval with Large Language Models].
+Code implementation of the paper [Generative Retrieval with Large Language Models](https://arxiv.org/abs/2402.17010).
 
 ## Prerequisites
 
