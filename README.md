@@ -1,6 +1,6 @@
-# Generative Retrieval with Large Language Models
+# MindRef: Mimicking Human Memory for Hierarchical  Reference Retrieval with Fine-Grained Location Awareness
 
-Code implementation of the paper [Generative Retrieval with Large Language Models](https://arxiv.org/abs/2402.17010).
+Code implementation of the paper [MindRef: Mimicking Human Memory for Hierarchical  Reference Retrieval with Fine-Grained Location Awareness]().
 
 ## Prerequisites
 
